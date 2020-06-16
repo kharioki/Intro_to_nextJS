@@ -11,11 +11,13 @@ export default function Index() {
     <div>
       <h1>Details Page</h1>
       {people.map((x, index) => (
-        <Link as={`/${x.v}/${x.name}`} href="/[vehicle]/[person]" key={index}>
-          <a>
-            Navigate to {x.name}'s {x.v}
-          </a>
-        </Link>
+        <div key={index}>
+          <Link as={`/${x.v}/${x.name}`} href="/[vehicle]/[person]">
+            <a>
+              Navigate to {x.name}'s {x.v}
+            </a>
+          </Link>
+        </div>
       ))}
     </div>
   );
