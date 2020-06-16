@@ -1,0 +1,29 @@
+{
+  "vehicles": [
+    {
+      "vehicle": "Car",
+      "ownerName": "Jvne Minaj",
+      "details": "some detail about Bruno's Car"
+    },
+    {
+      "vehicle": "Bike",
+      "ownerName": "Tessie Cole",
+      "details": "some detail about Bruno's Bike"
+    },
+    {
+      "vehicle": "Bike",
+      "ownerName": "Ken Doe",
+      "details": "some detail bile"
+    },
+    {
+      "vehicle": "Airplane",
+      "ownerName": "Tony Stark",
+      "details": "some detail Bill Gates"
+    },
+    {
+      "vehicle": "SpaceX",
+      "ownerName": "Elon Musk",
+      "details": "some detail Elon"
+    }
+  ]
+}
