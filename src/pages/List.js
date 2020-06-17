@@ -1,22 +1,22 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-export default function List() {
-  const [owners, setOwners] = useState([]);
+export default function List({ ownersList }) {
+  // const [owners, setOwners] = useState([]);
 
-  useEffect(() => {
-    async function loadData() {
-      const response = await fetch('http://localhost:4001/vehicles');
-      const ownersList = await response.json();
-      setOwners(ownersList);
-    }
+  // useEffect(() => {
+  //   async function loadData() {
+  //     const response = await fetch('http://localhost:4001/vehicles');
+  //     const ownersList = await response.json();
+  //     setOwners(ownersList);
+  //   }
 
-    loadData();
-  }, []);
+  //   loadData();
+  // }, []);
 
   return (
     <div>
-      {owners.map((el, index) => (
+      {ownersList.map((el, index) => (
         <div key={index}>
           <Link
             as={`/${el.vehicle}/${el.ownerName}`}
@@ -31,3 +31,9 @@ export default function List() {
     </div>
   );
 }
+
+List.getInitialProps = async () => {
+  const response = await fetch('http://localhost:4001/vehicles');
+  const ownersList = await response.json();
+  return { ownersList };
+};
