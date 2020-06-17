@@ -3,27 +3,27 @@
     {
       "vehicle": "Car",
       "ownerName": "Jvne Minaj",
-      "details": "some detail about Bruno's Car"
+      "details": "some detail about Jvne's Car"
     },
     {
       "vehicle": "Bike",
       "ownerName": "Tessie Cole",
-      "details": "some detail about Bruno's Bike"
+      "details": "some detail about Tessie's Bike"
     },
     {
       "vehicle": "Bike",
       "ownerName": "Ken Doe",
-      "details": "some detail bile"
+      "details": "some detail about Ken's bike"
     },
     {
       "vehicle": "Airplane",
       "ownerName": "Tony Stark",
-      "details": "some detail Bill Gates"
+      "details": "some detail about Tony's airplane"
     },
     {
       "vehicle": "SpaceX",
-      "ownerName": "Elon Musk",
-      "details": "some detail Elon"
+      "ownerName": "Tony Stark",
+      "details": "some detail about Tony's SpaceX"
     }
   ]
 }
